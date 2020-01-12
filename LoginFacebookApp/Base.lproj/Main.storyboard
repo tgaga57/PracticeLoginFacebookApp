@@ -18,15 +18,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="opv-qa-Rct"/>
+                    <connections>
+                        <segue destination="HFs-je-ywL" kind="show" id="bmt-Eb-URj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1077.5999999999999" y="118.29085457271366"/>
+            <point key="canvasLocation" x="978" y="117"/>
         </scene>
-        <!--View Controller-->
+        <!--Next View Controller-->
         <scene sceneID="CuG-78-zdb">
             <objects>
-                <viewController id="HFs-je-ywL" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="next" id="HFs-je-ywL" customClass="NextViewController" customModule="LoginFacebookApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y0o-wg-n5d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,10 +49,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="MmK-Cs-ZSZ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="nQL-rt-woQ"/>
+                    <connections>
+                        <outlet property="profileImageView" destination="XSE-We-SVv" id="Oev-bG-HiH"/>
+                        <outlet property="useNameLabel" destination="Y0o-wg-n5d" id="SNJ-aY-dcf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dei-PU-ajK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1904.8" y="119.1904047976012"/>
+            <point key="canvasLocation" x="1714" y="118"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sgu-Fe-UHw">
