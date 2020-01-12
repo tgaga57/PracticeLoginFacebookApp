@@ -19,7 +19,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="opv-qa-Rct"/>
                     <connections>
-                        <segue destination="HFs-je-ywL" kind="show" id="bmt-Eb-URj"/>
+                        <segue destination="HFs-je-ywL" kind="show" identifier="next" id="ZHV-Hk-Wmu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -29,7 +29,7 @@
         <!--Next View Controller-->
         <scene sceneID="CuG-78-zdb">
             <objects>
-                <viewController storyboardIdentifier="next" id="HFs-je-ywL" customClass="NextViewController" customModule="LoginFacebookApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="next" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HFs-je-ywL" customClass="NextViewController" customModule="LoginFacebookApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y0o-wg-n5d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,6 +37,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XSE-We-SVv">
                                 <rect key="frame" x="67" y="63" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9oz-V0-V9c">
                                 <rect key="frame" x="76" y="355" width="222" height="43"/>
@@ -52,7 +53,7 @@
                     <navigationItem key="navigationItem" id="nQL-rt-woQ"/>
                     <connections>
                         <outlet property="profileImageView" destination="XSE-We-SVv" id="Oev-bG-HiH"/>
-                        <outlet property="useNameLabel" destination="Y0o-wg-n5d" id="SNJ-aY-dcf"/>
+                        <outlet property="userNameLabel" destination="9oz-V0-V9c" id="z3l-YL-lQk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dei-PU-ajK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
